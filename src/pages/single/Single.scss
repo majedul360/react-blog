@@ -1,3 +1,8 @@
+@import "../../global.scss";
+
 .single {
   display: flex;
+  @include device(450px) {
+    flex-direction: column;
+  }
 }

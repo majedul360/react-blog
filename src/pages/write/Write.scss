@@ -1,0 +1,52 @@
+@import "../../global.scss";
+
+.write {
+  img {
+    width: 80%;
+    height: 40rem;
+    border-radius: 1rem;
+  }
+
+  form {
+    margin-top: 1.5rem;
+    .icon {
+      font-size: 2rem;
+      width: 3rem;
+      height: 3rem;
+      line-height: 3rem;
+      text-align: center;
+      border-radius: 50%;
+      border: 0.1rem solid gray;
+    }
+
+    .file {
+      display: none;
+    }
+
+    input,
+    textarea {
+      padding: 1.2rem 1.4rem;
+      font-size: 3rem;
+      width: 85%;
+      text-transform: none;
+      resize: none;
+
+      &::placeholder {
+        text-transform: capitalize;
+      }
+    }
+
+    button {
+      font-size: 1.7rem;
+      padding: 1rem 2rem;
+      background-color: mediumseagreen;
+      color: white;
+      border-radius: 0.5rem;
+
+      @include device(768px) {
+        position: relative;
+        left: 75%;
+      }
+    }
+  }
+}

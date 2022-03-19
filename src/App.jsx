@@ -1,11 +1,11 @@
 import Header from "./components/Header/Header";
 import "./App.scss";
-import Single from "./pages/single/Single";
+import Write from "./pages/write/Write";
 function App() {
   return (
     <div className="app">
       <Header className="header" />
-      <Single />
+      <Write />
     </div>
   );
 }
