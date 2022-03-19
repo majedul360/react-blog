@@ -1,0 +1,105 @@
+@import "./global.scss";
+.app {
+  > * {
+    padding: 3rem 9%;
+  }
+
+  .header {
+    padding: 2rem 9%;
+
+    .right {
+      .menu {
+        font-size: 2rem;
+        margin-left: 2rem;
+        display: none;
+      }
+    }
+  }
+  .home {
+    padding: 0;
+    padding-bottom: 3rem;
+
+    .container {
+      padding: 0 9%;
+    }
+  }
+}
+
+// devices responsive
+
+@include device(1024px) {
+  .app {
+    > * {
+      padding: 3rem 5%;
+    }
+
+    .header {
+      padding: 2rem 5%;
+      .container {
+        padding: 0 5%;
+      }
+    }
+
+    .home .container {
+      padding: 0 5%;
+    }
+  }
+}
+
+@include device(991px) {
+  .app {
+    > * {
+      padding: 3rem;
+    }
+
+    .header {
+      padding: 2rem 3rem;
+    }
+    .home .container {
+      padding: 0 3rem;
+    }
+  }
+}
+@include device(768px) {
+  .app {
+    .header {
+      nav {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: all 0.4s ease;
+
+        &.active {
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+        span {
+          display: block;
+          margin: 1rem 3rem;
+        }
+      }
+      .right {
+        .menu {
+          display: block;
+        }
+      }
+    }
+  }
+}
+@include device(450px) {
+  .app {
+    > * {
+      padding: 3rem 2rem;
+    }
+
+    .header {
+      padding: 2rem;
+    }
+
+    .home .container {
+      padding: 0 2rem;
+    }
+  }
+}

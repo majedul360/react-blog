@@ -1,0 +1,5 @@
+@mixin device($val) {
+  @media (max-width: $val) {
+    @content;
+  }
+}

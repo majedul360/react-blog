@@ -1,0 +1,19 @@
+.banner {
+  margin-bottom: 4rem;
+  .content {
+    position: relative;
+    top: 5rem;
+    text-align: center;
+    p {
+      font-size: 2rem;
+    }
+
+    h1 {
+      font-size: 7rem;
+      font-weight: 500;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}

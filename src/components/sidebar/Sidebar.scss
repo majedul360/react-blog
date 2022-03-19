@@ -1,0 +1,32 @@
+@import "../../global.scss";
+
+.sidebar {
+  flex: 3;
+  padding: 0 2rem;
+  text-align: center;
+
+  @include device(450px) {
+    flex: 12;
+  }
+  img {
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  p {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+  }
+
+  .category {
+    margin: 2.5rem 0;
+    .category-container {
+      display: flex;
+      justify-content: space-around;
+      margin: 1rem 0;
+      span {
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
