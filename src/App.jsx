@@ -1,11 +1,12 @@
 import Header from "./components/Header/Header";
 import "./App.scss";
-import Registar from "../src/pages/registar/Registar";
+import Home from "./pages/home/Home";
+
 function App() {
   return (
     <div className="app">
-      <Header className="header" />
-      <Registar />
+      <Header />
+      <Home />
     </div>
   );
 }
