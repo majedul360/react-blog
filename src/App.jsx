@@ -1,11 +1,11 @@
 import Header from "./components/Header/Header";
 import "./App.scss";
-import Write from "./pages/write/Write";
+import Settings from "./pages/settings/Settings";
 function App() {
   return (
     <div className="app">
       <Header className="header" />
-      <Write />
+      <Settings />
     </div>
   );
 }

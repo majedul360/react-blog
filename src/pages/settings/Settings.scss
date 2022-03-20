@@ -1,0 +1,81 @@
+@import "../../global.scss";
+
+.settings {
+  display: flex;
+  @include device(450px) {
+    flex-direction: column;
+  }
+
+  .user {
+    flex: 9;
+    padding-right: 3rem;
+
+    @include device(450px) {
+      padding-right: 0;
+      margin-bottom: 4rem;
+    }
+    .account {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      span {
+        color: red;
+        &:first-child {
+          font-size: 2.5rem;
+        }
+        &:last-child {
+          font-size: 1.7rem;
+        }
+      }
+    }
+
+    form {
+      h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      img {
+        width: 5rem;
+        height: 5rem;
+        object-fit: cover;
+        border-radius: 0.5rem;
+      }
+
+      .icon {
+        font-size: 1.5rem;
+        border: 0.5rem solid red;
+        border-radius: 50%;
+        color: gray;
+        padding: 0.3rem;
+        margin-left: 1rem;
+      }
+
+      input[type="file"] {
+        display: none;
+      }
+
+      label {
+        font-size: 1.7rem;
+        font-weight: 500;
+      }
+      input {
+        margin: 1rem 0;
+        text-transform: none;
+        border-bottom: 0.1rem solid gray;
+        padding-bottom: 0.5rem;
+        width: 80%;
+      }
+
+      button {
+        margin-left: 35%;
+        padding: 1rem 3rem;
+        font-size: 1.7rem;
+        background-color: palegreen;
+        border-radius: 1rem;
+        margin-top: 2rem;
+      }
+    }
+  }
+}
