@@ -1,0 +1,39 @@
+.registar {
+  background: url("https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  height: 89vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    position: absolute;
+    right: 2rem;
+    top: 10rem;
+    background-color: palevioletred;
+    font-size: 1.7rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  label {
+    font-size: 1.7rem;
+  }
+
+  input {
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 100%;
+    &:last-child {
+      background-color: palegreen;
+      border-radius: 1rem;
+      font-size: 1.7rem;
+      font-weight: bold;
+    }
+  }
+}

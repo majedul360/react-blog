@@ -1,11 +1,11 @@
 import Header from "./components/Header/Header";
 import "./App.scss";
-import Settings from "./pages/settings/Settings";
+import Registar from "../src/pages/registar/Registar";
 function App() {
   return (
     <div className="app">
       <Header className="header" />
-      <Settings />
+      <Registar />
     </div>
   );
 }

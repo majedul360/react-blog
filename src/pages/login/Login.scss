@@ -1,0 +1,39 @@
+.login {
+  background: url("https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: cover;
+  height: 89vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    position: absolute;
+    right: 2rem;
+    top: 10rem;
+    background-color: aqua;
+    font-size: 1.7rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  label {
+    font-size: 1.7rem;
+  }
+
+  input {
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 100%;
+    &:last-child {
+      background-color: palevioletred;
+      border-radius: 1rem;
+      font-size: 1.7rem;
+      font-weight: bold;
+    }
+  }
+}
